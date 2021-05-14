@@ -1,0 +1,234 @@
+@charset "utf-8";
+/* My IT162 Portal Website Styles */
+
+    html {
+        background-color:#ccc;
+    }
+
+    main.wrapper {
+        background-color:#fbfaf6;
+        overflow: auto;
+    }
+
+    h1>a {
+        text-decoration: none;
+        color:#000;
+    }
+
+    .logo {
+        transform: scale(2);
+        filter: invert(100%);
+        margin-right: 1%;
+        margin-left: 4%;
+        text-shadow: 1px 1px #ccc;
+        font-size: 1.25em;
+    }
+
+    span.first, .pageID {
+        font-family:'Permanent Marker', regular;
+    }
+
+    p, nav, footer {
+        font-family:'Roboto', sans-serif;
+    }
+
+/* Embed Responsive Rules */
+    div.embed-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        margin: auto;
+        max-width: 98%;
+    }
+
+    div.embed-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    footer {
+        margin: auto;
+	    clear: both;
+    }
+
+/* START RESPONSIVE STYLES */
+
+/* DESKTOP */
+@media all and (min-width:1400px) {
+
+     .pageID {
+        display: block;
+        padding: 1%;
+        margin: 4%;
+    }
+
+    section {
+		width: 25%;
+        display: block;
+        float: left;
+        padding-left: 1%;
+        margin-left: 4%
+	}
+
+    section img.desktop {
+       width: 100%; 
+       display: block;
+       padding-left: 1%;
+       margin-left: 4%;
+       padding-bottom: 1%;
+       margin-bottom: 3%;
+    }
+
+    section p.p1 {
+       width: 80%;
+       text-align: justify;
+       display: none;
+       padding-left: 1%;
+       margin-left: 4%;
+       margin-right: .25%;
+    }
+
+    section p.p2 {
+        width: 80%;
+        display: none;
+        text-align: justify;
+        padding-left: 1%;
+        margin-left: 4%;
+        margin-right: .25%;
+    }
+
+    aside {
+        float: right;
+		width: 70%;
+    }
+
+    h3 {
+        display: none;
+    }
+			
+    .p3 {
+        width: 80%;
+        display: block;
+        text-align: justify;
+        padding: 2% 10% 1% 1%;
+        margin: 8% 10% 2% 3%;
+        float: left;
+    }
+
+    .p4 {
+        width: 80%;
+        display: block;
+        text-align: justify;
+        padding: 0% 10% 0% 1%;
+        margin: 0% 10% 0% 3%;
+        float: left;
+    }
+    
+    img.tablet, img.phone {
+       	 display: none;
+    }  
+    
+/* add border inside navigation on selected page link */
+    ul.topnav li a.selected {
+        border: 2px solid #fff; 
+        padding: 15% 15% 15% 15%;
+        margin: 15% 15% 15% 15%;
+   	 }
+}
+
+/* TABLET */
+@media all and (min-width:737px) and (max-width:1399px) {
+
+    .wrapper {
+        width: 100%;
+        margin: auto;
+	}
+    
+    section {
+		width: 55%;
+		float: left;
+        margin-left: 3%;
+        text-align: justify;
+	}
+	
+	aside {	
+		width: 39%;
+		display: inline-block;
+        margin-top: 4%;
+	}
+
+    h3 {
+        display: none;
+    }
+
+    .p3, .p4 {
+        display: none;
+    }
+    
+    img.tablet {
+       	width: 90%;
+        display: inline-block;
+        padding-left: 3%;
+        margin-left: 3%;
+    }
+
+    img.desktop, img.phone {
+       	display: none;
+    }  
+    
+/* add border to navigation on selected page link */
+    ul.topnav li a.selected { 
+        border: 2px solid #fff;
+        padding: 15% 15% 15% 15%;
+        margin: 15% 15% 15% 15%;
+    }
+}
+
+/* PHONE */
+@media all and (max-width:736px) {
+
+    main.wrapper {
+        padding-right:20px;
+        padding-left:20px;
+    }
+
+    .logo {
+        transform: scale(1.5);
+        padding: .5%;
+        margin: 1%;
+    } 
+
+    img.phone {
+       	width: 60%;
+        float: left;
+        padding: 0px 5px 1px 1px;
+        margin: 0px 15px 4px 1.5px;
+    }
+
+    .p1, .p2 {
+        display: block;
+        text-align: left;
+    }    
+    
+    img.tablet, img.desktop {
+       	display: none;
+    }  
+
+    h3 {
+        display: none;
+    }
+
+    .p3 {
+        display: none;
+    }
+
+    .p4 {
+        display: none;
+    }
+}
+
+
