@@ -8,11 +8,12 @@
 <script src="https://use.fontawesome.com/6a71565c22.js"></script>
 <link rel="stylesheet" type="text/css" href="css/nav.css"/>
 <link rel="stylesheet" type="text/css" href="css/portal.css"/>
-<link rel="stylesheet" type="text/css" href="css/form.css"/>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>

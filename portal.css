@@ -1,13 +1,15 @@
 @charset "utf-8";
 /* My IT162 Portal Website Styles */
 
-    html {
-        background-color:#ccc;
+    html, body {
+        background-color:#cccccc;
+        height: 100%;
     }
 
     main.wrapper {
         background-color:#fbfaf6;
         overflow: auto;
+        height: 98%;
     }
 
     h1>a {
@@ -20,7 +22,7 @@
         filter: invert(100%);
         margin-right: 1%;
         margin-left: 4%;
-        text-shadow: 1px 1px #ccc;
+        text-shadow: 1px 1px #cccccc;
         font-size: 1.25em;
     }
 
@@ -28,9 +30,11 @@
         font-family:'Permanent Marker', regular;
     }
 
-    p, nav, footer {
+    nav, footer {
         font-family:'Roboto', sans-serif;
+        font-weight: 100;
     }
+
 
 /* Embed Responsive Rules */
     div.embed-container {
@@ -51,7 +55,11 @@
     }
 
     footer {
-        margin: auto;
+        background-color:#fbfaf6;
+        padding-left: 1%;
+        margin-left: 4%;
+        padding-top: 1%;
+        margin-top: 4%;
 	    clear: both;
     }
 
@@ -59,6 +67,12 @@
 
 /* DESKTOP */
 @media all and (min-width:1400px) {
+    main.wrapper {
+        background-color:#fbfaf6;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+	}
 
      .pageID {
         display: block;
@@ -117,6 +131,8 @@
         padding: 2% 10% 1% 1%;
         margin: 8% 10% 2% 3%;
         float: left;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
     }
 
     .p4 {
@@ -126,33 +142,48 @@
         padding: 0% 10% 0% 1%;
         margin: 0% 10% 0% 3%;
         float: left;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
     }
     
     img.tablet, img.phone {
        	 display: none;
     }  
-    
-/* add border inside navigation on selected page link */
-    ul.topnav li a.selected {
-        border: 2px solid #fff; 
-        padding: 15% 15% 15% 15%;
-        margin: 15% 15% 15% 15%;
-   	 }
-}
+
+    footer {
+        clear: both; 
+        background-color:#fbfaf6;
+        padding-left: 1%;
+        margin-left: 4%;
+        padding-top: 1%;
+        margin-top: 4%;
+       
+    }
+} 
 
 /* TABLET */
 @media all and (min-width:737px) and (max-width:1399px) {
 
-    .wrapper {
-        width: 100%;
+    main.wrapper {
         margin: auto;
+        width: 100%;
+        height: 100%;
 	}
+
+    /* add border inside navigation on selected page link */
+    ul.topnav li a.selected {
+        padding: 11px 13px;
+        margin: 2px;
+        border: 2px solid #ffffff;      
+    }
     
     section {
 		width: 55%;
 		float: left;
         margin-left: 3%;
         text-align: justify;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
 	}
 	
 	aside {	
@@ -179,39 +210,56 @@
     img.desktop, img.phone {
        	display: none;
     }  
-    
-/* add border to navigation on selected page link */
-    ul.topnav li a.selected { 
-        border: 2px solid #fff;
-        padding: 15% 15% 15% 15%;
-        margin: 15% 15% 15% 15%;
-    }
-}
+
+} 
+
 
 /* PHONE */
 @media all and (max-width:736px) {
-
     main.wrapper {
-        padding-right:20px;
-        padding-left:20px;
+        overflow: auto;
+        padding-right: 1%;
+        padding-left: 2%;
     }
 
     .logo {
         transform: scale(1.5);
-        padding: .5%;
-        margin: 1%;
+        padding-left: 2%;
+        padding-right: 1%;
+        margin: 1.5%;
     } 
+
+    span.first {
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+        padding-left: 1%;
+        text-align: justify;
+        text-justify: auto;
+      }
+
+    .pageID {
+        padding-left: 18px;
+      
+    }
 
     img.phone {
        	width: 60%;
         float: left;
-        padding: 0px 5px 1px 1px;
-        margin: 0px 15px 4px 1.5px;
+        padding: 0px 5px 1px 18px;
+        margin: 0px 15px 4px 1px;
+    }
+    
+    section.p2 {
+        padding-bottom: 10%;
     }
 
     .p1, .p2 {
+        padding-right: 20px;
+        padding-left: 18px;
         display: block;
         text-align: left;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
     }    
     
     img.tablet, img.desktop {
@@ -228,6 +276,17 @@
 
     .p4 {
         display: none;
+    }
+
+    footer {
+        clear: both;
+        padding-left: 1%;
+        margin-left: 2%;
+        padding-right: 1%;
+        margin-right: 2%;
+        padding-top: 1%;
+        margin-top: 4%;
+        background-color:#fbfaf6;
     }
 }
 
