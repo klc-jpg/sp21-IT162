@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang=en>
 <head>
-<title>Contact Me</title>
+<title>Contact Kelly</title>
 <meta name="viewport" content="width=device-width" />
 <meta name="robots" content="noindex,nofollow" />
-<meta charset="utf-8">
-<script src="https://use.fontawesome.com/6a71565c22.js"></script>
-<link rel="stylesheet" type="text/css" href="css/form.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="preconnect" href="https://use.fontawesome.com">
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/form.css">
 </head>
 
 <body>
 <main class="wrapper">
 <header>
-  <h1><a href="contactme.php"><i class="logo fa fa-home"></i><span class="first">Kelly Chapman's SCC IT162 Portal</span></a></h1> 
+  <h1><a href="contactme.php"><i class="fas fa-address-card"></i><span class="first">Kelly Chapman's SCC IT162 Portal</span></a></h1> 
   <nav>  
     <ul class="topnav" id="myTopnav">
       <li><a href="index.php">Home</a></li>
@@ -47,7 +48,7 @@
   </div>
 <!-- START Footer -->
 <footer>
-   <p><small>&copy; <?=date("Y")?> by Kelly Chapman <a href="https://validator.w3.org/nu/?showsource=yes&showoutline=yes&doc=https%3A%2F%2Fit162.kellychapman.xyz%2Fcontactme.php" target="_blank">Check HTML</a> ~ <a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fit162.kellychapman.xyz%2Fcontactme.php&profile=css3svg&usermedium=all&warning=1&vextwarning=" target="_blank">Check CSS</a></small></p>
+   <p><small>&copy; <?=date("Y")?> by Kelly Chapman <a href="https://validator.w3.org/nu/?showsource=yes&showoutline=yes&doc=https%3A%2F%2Fit162.kellychapman.xyz%2Fcontactme.php" target="_blank"> Check HTML</a> ~ <a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fit162.kellychapman.xyz%2Fcontactme.php&profile=css3svg&usermedium=all&warning=1&vextwarning=" target="_blank">Check CSS</a></small></p>
 </footer>
 <!-- END Footer --> 
 </main>

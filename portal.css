@@ -30,11 +30,10 @@
         font-family:'Permanent Marker', regular;
     }
 
-    nav, footer {
+    footer {
         font-family:'Roboto', sans-serif;
-        font-weight: 100;
+        font-weight: 300;
     }
-
 
 /* Embed Responsive Rules */
     div.embed-container {
@@ -132,7 +131,7 @@
         margin: 8% 10% 2% 3%;
         float: left;
         font-family: 'Roboto', sans-serif;
-        font-weight: 100;
+        font-weight: 300;
     }
 
     .p4 {
@@ -143,7 +142,7 @@
         margin: 0% 10% 0% 3%;
         float: left;
         font-family: 'Roboto', sans-serif;
-        font-weight: 100;
+        font-weight: 300;
     }
     
     img.tablet, img.phone {
@@ -183,7 +182,7 @@
         margin-left: 3%;
         text-align: justify;
         font-family: 'Roboto', sans-serif;
-        font-weight: 100;
+        font-weight: 300;
 	}
 	
 	aside {	
@@ -238,8 +237,7 @@
       }
 
     .pageID {
-        padding-left: 18px;
-      
+        padding-left: 18px; 
     }
 
     img.phone {

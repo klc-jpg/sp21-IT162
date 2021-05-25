@@ -88,7 +88,7 @@ function loadContact($form,$feedback='')
     
     if($toAddress=='' || $toAddress == '')
     {
-        echo loadContact('includes/simple.php','new_feedback.php');
+        echo loadContact('includes/simple.php','includes/new_feedback.php');
         die;
     }
 
@@ -96,7 +96,7 @@ function loadContact($form,$feedback='')
     $skipFields = 'g-recaptcha-response,Email';
     if($feedback == '')
     {
-        $feedback = 'new_feedback.php';
+        $feedback = 'includes/new_feedback.php';
     }
     
     if (isset($_POST['g-recaptcha-response'])):

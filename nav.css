@@ -16,7 +16,8 @@
 
 /* Style the links inside the list items */
     nav ul.topnav li a {
-        font-family:'Roboto', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
         color: #f2f2f2;
         background-color: #000000;
         padding: 14px 16px;
@@ -104,12 +105,11 @@
         text-align: left;
     }
 
-/* change background color of selected link */
-    nav ul.topnav li a.selected {
-        background-color: #555555;
-        color: #ffffff;  
-        width: 60%;
-    }
+    nav ul.topnav.responsive li a.selected {
+        color: #ffffff;
+        background: linear-gradient(to left, #000000 40%, #555555 40%, #555555 60%);
+     }
+
 }
 
 
