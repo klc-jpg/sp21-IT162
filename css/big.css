@@ -1,0 +1,499 @@
+
+/* My IT162 Big Website Styles */
+
+    html {
+        background-color:#cccccc;
+        height: 100%;
+}
+
+    body { 
+        background-color: #ffffff;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+    main.wrapper {
+        background-color: #ffffff;
+        overflow: auto;
+        margin: 0;
+        padding: 0;
+        min-height: 98%;
+        width: 100%;
+    }
+
+   header{
+        background-image: url(../assets/banner2.png); 
+        background-size: cover;  
+        /*background-position: center;*/
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;  
+        background-attachment: fixed;
+        overflow: visible;
+    }
+
+    h1>a {
+        list-style-type: none;
+        text-decoration: none;
+        color:#000;
+        margin: 0;
+    } 
+
+    span.report>h3, span.paper>h3 {
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+        color: #030303;
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+
+    img.bkrnd {
+        max-height: 0.0001px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+   
+
+    .logo {
+        filter: invert(100%);
+        margin-right: 1%;
+        margin-left: 4%;
+        font-size: 1.25em;
+        text-shadow: 1px 1px #cccccc;
+        vertical-align: middle;
+    }
+
+    section p, aside p {
+        text-align: justify;
+    }
+
+    div, footer, p, #canlis_links, #accessLinks {
+        font-family:'Roboto', sans-serif;
+        font-weight: 300;
+        color: #0a0a0a;
+        text-decoration: none;
+    }
+
+    span.first, .pageID, .designLinks,  h1, h2, h3 {
+        font-family:'Permanent Marker', regular;
+        color: #3f3f3f;
+        text-decoration: none;
+    }
+
+    #canlis_links, #accessLinks {
+        margin: auto;
+    }
+
+    div#canlis_links a {
+        list-style-type: none;
+        text-decoration: none;
+        font-size: 15px;
+        color: #3f3f3f;
+        margin: 3% 3% 3% 30%;
+        max-width: 30%;
+        padding: 12px 14px;
+        border: 2px solid #3f3f3f;
+        height: fit-content;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    div.p4 {
+        margin: auto;
+    }
+
+    div#accessLinks, a.one, a.two, a.three, a.four { 
+        list-style-type: none;
+        text-decoration: none;
+        font-family:'Roboto', sans-serif;
+        text-align: center;
+        font-weight: 300;
+        font-size: 15px;
+        color: #3f3f3f;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        height: fit-content;
+        max-width: 45%;
+        max-height: 100%;
+        padding: 12px 14px;
+        margin: 3%;
+        border: 2px solid #3f3f3f;       
+    }
+    
+    li a, div a:hover {
+      background-color: #cccccc;
+    }
+
+
+  .designLinks {
+    list-style-type: none;
+    display: block;
+    float: right;
+ }
+
+/* Embed Responsively Rules! */
+div.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: auto;
+    max-width: 98%;
+} 
+
+div.embed-container iframe {
+    position: absolute;
+    margin-top: 2%;
+    left: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+footer {
+        display: block;
+        background-color: #ffffff;
+        padding-left: 1%;
+        margin-left: 4%;
+        padding-top: 1%;
+        margin-top: 4%;
+	    clear: both;
+    }
+
+
+/* START RESPONSIVE STYLES */
+
+
+
+/* DESKTOP */
+@media all and (min-width: 1201px) {
+
+    img.bkrnd{
+        min-width: 1201px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .logo {
+        transform: scale(2);
+        margin-right: 2%;
+        padding-bottom: 0.5%;
+    }
+
+    span.first {
+        margin-left: 1%;
+    }
+	
+   .pageID {
+        display: block;
+        padding: 1%;
+        margin: 4%;
+    }
+
+    section {
+		width: 55%;
+		float: left;
+        margin: auto;
+        padding-top: 1%;
+	}
+
+
+    section img.view {
+        max-width: 575px; 
+        display: block;
+        padding-left: 1%;
+        margin-left: 4%;
+        padding-bottom: 1%;
+        margin-bottom: 1%;
+     }
+
+     section img.hero {
+         max-width: 100%;
+         margin-left: 5%;
+         border: 1px solid #000000;
+    }
+
+    span.report>h3 {
+       margin-left: 5%;
+   }
+
+    .orcas, .accessibility, .map{
+        max-width: 575px;
+        max-height: 400px;
+        margin-left: 5%;
+    }
+
+    section p {
+        margin: 1% 1% 1% 5%;
+    }
+	
+    aside {	
+		width: 35%;
+		float: right;
+        margin: 1%;
+        padding: 10% 1% 0 0;
+	}
+
+    aside h3 {
+        font-family:'Permanent Marker', regular;
+        display: block;
+        margin: auto;
+        padding: 1% 5% 1% 0;
+    }
+
+    .calendar {
+        margin: auto;
+        padding-top:1%;
+        width: 500px;
+        height: 500px;
+    }
+
+
+    img.designLarge {
+        display: block;
+        float: right;
+        margin: auto;
+        padding: 0% 1% 15% 0;
+        width: 90%;
+        height: 90%;
+    }
+
+
+    .designLinks {
+        display: none
+    }
+}
+
+
+/* TABLET */
+@media all and (min-width: 601px) and (max-width: 1200px){
+
+    main.wrapper {
+		margin: auto;
+        width: 100%;
+        height: 100%;
+	}
+
+    img.bkrnd{
+        max-height: 0.001px;
+        max-width: 1200px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+}
+
+    .logo { 
+        margin-right: 1.5%;
+        margin-left: 1.5%;
+        padding-left: 1%;
+        transform: scale(1.5);
+    }
+
+    span.first {
+        margin-left: 2%;
+    }
+	
+
+    section {
+		width: 55%;
+        padding-top: 2%;
+		float: left;
+        margin: auto;
+	}
+   
+    .map {
+        max-width: 450px;
+    }
+
+    section img.hero{
+        max-width: 100%;
+        display: block;
+        margin-left: 3%;
+        margin-bottom: 3%;
+        border:  1px solid #000000;
+   }
+
+    section img.view{
+        max-width: 500px;
+        display: block;
+        margin-left: 2%;
+        padding-bottom: 1%;
+        margin-bottom: 2%;
+        padding-left: 1%;
+    }
+
+   span.report>h3, span.paper>h3 {
+        margin-left: 2%;
+    }
+
+   section p {
+        margin-left: 2%;
+    }
+
+    aside {	
+		width: 30%;
+		float: right;
+        margin: 1%;
+        padding: 10% 1% 0 5%;
+	}
+
+    aside h3 {
+        font-family:'Permanent Marker', regular;
+        display: block;
+        margin: auto;
+        padding: 1% 5% 3% 2%;
+    }
+
+    aside p, .mla {
+        margin-left: 2%;
+        margin-right: 5%;
+    }
+
+    .calendar, .accessibility {
+        margin: auto;
+        padding-top: 1%;
+        max-width: 400px;
+    }
+
+    img.designLarge {
+        display: block;
+        float: right;
+        margin: auto;
+        padding: 0% 3% 5% 0;
+        width: 100%;
+        height: 100%;
+      }
+      
+      
+      .designLinks {
+          display: none
+      }
+
+   
+}
+
+/* PHONE */
+@media all and (max-width: 600px) {
+
+    main.wrapper {
+        overflow: auto;
+        margin: 0 0.5% 0 0.5%;
+        padding: 0;
+    }
+
+    img.bkrnd{
+        max-height: 0.0001px;
+        width: 100%;
+        margin: 0;
+      }
+    
+    h1 {
+        margin: 1%;
+    }
+   
+    .logo {
+        transform: scale(1.25);
+        padding-right: 1%;
+        padding-left: 1%;
+        margin-left: 1.5%;
+        margin-right: 1%;
+        vertical-align: middle;
+    } 
+
+    span.first {
+       /* margin-right: 1.5%;
+        padding-left: 1%;*/
+        text-align: center;
+        vertical-align: middle;
+      }
+
+    h2.pageID {
+        margin: 1% 1% 1% 2.5%;
+        padding-top: 1%;
+    }
+ 
+    img.view, img.hero {
+        max-width: 225px;
+        max-height: 200px;
+        float: left;
+        padding: 0px 3px 1px 10px;
+        margin: 0px 10px 4px 1px;
+    }
+
+    section.intro {
+        float: right;
+        display: block;
+        text-align: left;
+        padding-right: 20px;
+        padding-left: 18px;
+    }
+
+    span.report>h3, span.paper>h3 {
+        padding: 0 20px 0 14px
+    }
+
+    section {
+        margin: auto;
+    }
+
+    section p, aside p {
+        margin: auto;
+        padding: 0 20px 0 20px;
+        display: block;
+        text-align: justify;
+    }
+
+    aside {
+        display: block;
+        padding: 2% 1% 1% 1%;
+        margin: auto;
+    }
+    
+    aside iframe {
+        margin: auto; 
+        display: block;
+        width: 300px;
+        height: 300px;
+    }
+
+    .orcas, .accessibility {
+        max-width: 300px;
+        max-height: 300px;
+        margin-left: 5%;
+    }
+
+    aside p p.p2, aside p p.p3 {
+        font-family:'Roboto', sans-serif;
+        font-weight: 300;
+        text-decoration: none;
+    }
+
+    div#canlis_links {
+        margin: auto;
+    }
+
+    .calendar {
+        display: block;
+        margin: auto;
+        padding-top:1%;
+        width: 300px;
+        height: 300px;
+    }
+
+   img.designLarge, map#image-map {
+        display: none;
+    }
+
+    aside.h3 {
+      font-family: 'Permanent Marker', regular; 
+      text-decoration: none; 
+   }
+
+}

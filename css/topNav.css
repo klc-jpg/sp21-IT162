@@ -1,0 +1,191 @@
+@charset "utf-8";
+
+ul.topnav {
+    list-style-type: none;
+    padding: 0;
+    font-size: 17px;
+    background-color: #392e3a;
+    width: 100%;
+    height: 54px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+nav ul.topnav li {
+    text-align: center;
+}
+
+.fa-arrow-circle-o-left {
+    color: #f2f2f2;
+}
+
+.fa-chevron-down {
+   color: #f2f2f2;
+}
+
+/* Style the links inside the list items */
+nav ul.topnav li a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #CDCDCD;
+    background-color: #392e3a;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+@media all and (min-width:901px) {
+    ul.topnav {
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 54px;
+    width: 100%;
+}
+
+/* change background color of links on hover */
+nav ul.topnav li a:not(.selected, .first, .logo):hover {
+    background-color: #f2f2f2;
+    color: #392e3a;   
+}
+
+.fa-fw:hover {
+    color: #392e3a;  
+}
+  
+/* add border inside navigation on selected page link */
+nav ul.topnav li a.selected, div.dropdown li a.selected {
+    background-color: #555555;
+    padding: 11px 13px;
+    margin: 2px;
+}
+
+/*div.dropdown li a.selected {
+    background-color: #f2f2f2;
+}*/
+
+/* Hide the list item containing the link to open and close the topnav on small screens */
+ul.topnav li.icon {
+    display: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+div.dropdown {
+     /*position: relative;*/
+    /*display: block;*/
+    float:left;
+    overflow: hidden;
+    }
+    
+/* Dropdown Button */
+div.dropdown li a.dropbtn  {
+background-color: #f2f2f2;
+color:#0e1111;
+font-size: 17px;
+margin-right: 0;
+border: none;
+outline: none;
+font-family: 'Roboto', sans-serif;
+font-weight: 300;
+/*position: relative;*/
+}
+
+/* Dropdown Content (Hidden by Default) */
+ul.dropdown-content {
+display: none;
+list-style-type: none;
+position: absolute;
+color: #0e1111;
+background-color: #f2f2f2;
+min-width: 100px;
+padding-left: 1px;
+/*margin-left: 1.5%;*/
+/*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+/*z-index: 1;*/
+}
+
+/* Links inside the dropdown */
+ul.dropdown-content li a {
+list-style-type: none;
+float: none;
+color: #f2f2f2;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+/* Change color of dropdown links on hover */
+ul.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* display submenu on hover */
+div.dropdown:hover ul.dropdown-content{
+    display:flex;
+    flex-direction: column; 
+}
+}
+/* Hide list items on smaller screens and display list container icon */
+@media all and (max-width:900px){
+
+
+/*Gather list items to one side of container */
+    ul.topnav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    height: 54px;
+    background-color: #392e3a;
+}
+
+ul.topnav li:not(.icon){
+    display: none;
+}
+
+ul.topnav li.icon { 
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 2;
+    }
+}
+
+/* Connect to Javascript on icon click. */
+@media all and (max-width:900px) {
+    
+ul.topnav.responsive li.icon {
+        position: flex-start;
+        right: 0;
+        top: 0;
+    }
+    
+ul.topnav.responsive {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    justify-content: center;
+    align-items: space-around;
+    width: 100%;
+    height: fit-content;
+}
+
+ ul.topnav.responsive li {
+   display: flex;
+   flex-flow: column-reverse nowrap;
+}
+
+nav ul.topnav.responsive li a.selected {
+    background-color: #555555;
+    color: #CDCDCD;
+    /*background: linear-gradient(to left, #392e3a 40%, #555555 40%, #555555 60%);*/
+    }
+}
+
+
